@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class UIManager : MonoBehaviour
 {
+
     [SerializeField]
     private Image[] _livesImage;
 
@@ -61,7 +62,7 @@ public class UIManager : MonoBehaviour
             _player2GameOverText.SetActive(false);
             _restartText.SetActive(false);
         }
-        else if(_life == 0);
+        else if(_life == 0)
         {
             _player1GameOverText.SetActive(true);
             _player2GameOverText.SetActive(true);
@@ -73,6 +74,7 @@ public class UIManager : MonoBehaviour
     {
         throw new NotImplementedException();
     }
+
 
     public void UpdateLives(int playerId, int points)
     {
